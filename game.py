@@ -95,8 +95,16 @@ def play(game, x_player, o_player, print_game=True):
     if print_game:
                 print('It\'s a tie')
 
+# uncomment to watch the unbeatable computer play against a less intelligent computer
+# def main():
+#     x_player = RandomComputerPlayer('X')
+#     o_player = GeniusComputerPlayer('O')
+#     t = TicTacToe()
+#     play(t, x_player, o_player, print_game=True)
+
+# call python3 game.py to play
 def main():
-    x_player = RandomComputerPlayer('X')
+    x_player = HumanPlayer('X')
     o_player = GeniusComputerPlayer('O')
     t = TicTacToe()
     play(t, x_player, o_player, print_game=True)
